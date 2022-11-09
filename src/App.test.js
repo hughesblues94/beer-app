@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import App from './Components/App';
 
-test('renders learn react link', () => {
+test('that the component renders the brewdog name', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
+  const linkElement = screen.getByText(/Brewdog/i);
   expect(linkElement).toBeInTheDocument();
 });
